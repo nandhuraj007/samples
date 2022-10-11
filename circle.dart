@@ -1,20 +1,33 @@
-SizedBox.fromSize(
-                  size: Size(70, 70),
-                  child: ClipOval(
-                    child: Material(
-                      color: Colors.greenAccent,
-                      child: InkWell(
-                        splashColor: Colors.black87,
-                        onTap: () {
-                        },
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            Icon(Icons.account_circle),
-                             // text
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                )
+floatingActionButton: SpeedDial(
+        icon: Icons.menu,
+        activeIcon: Icons.close,
+        backgroundColor: Colors.black87,
+        foregroundColor: Colors.white,
+        activeBackgroundColor: Colors.teal.shade900,
+        activeForegroundColor: Colors.white,
+        visible: true,
+        closeManually: false,
+        curve: Curves.bounceIn,
+        overlayColor: Colors.black,
+        overlayOpacity: 0.5,
+        elevation: 8.0,
+        shape: CircleBorder(),
+        children: [
+          SpeedDialChild( //speed dial child
+            child: Icon(Icons.groups),
+            backgroundColor: Colors.teal.shade600,
+            foregroundColor: Colors.white,
+            label: 'New Group',
+            labelStyle: TextStyle(fontSize: 18.0),
+          ),
+          SpeedDialChild(
+            child: Icon(Icons.brush),
+            backgroundColor: Colors.teal.shade400,
+            foregroundColor: Colors.white,
+            label: 'My Groups',
+            labelStyle: TextStyle(fontSize: 18.0),
+          ),
+        ],
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.miniCenterFloat,
+    
