@@ -11,3 +11,37 @@ Windows keytool -list -v -keystore "\.android\debug.keystore" -alias androiddebu
 Linux keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android
 
 
+Works on Current PC :keytool -list -v -keystore debug.keystore -alias androiddebugkey -storepass android -keypass android 
+
+
+SHA1 code: 37:96:C6:74:AD:84:35:43:6A:87:F2:1E:28:02:73:D1:3A:01:A3:0B
+
+
+
+keytool -list -v -keystore debug.keystore -alias androiddebugkey -storepass android -keypass android 
+Alias name: androiddebugkey
+Creation date: 31-Oct-2022
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: CN=Nandhu Raj, OU=Flutter test, O=Flutter, L=Kochi, ST=Kerala, C=IN
+Issuer: CN=Nandhu Raj, OU=Flutter test, O=Flutter, L=Kochi, ST=Kerala, C=IN
+Serial number: 2b83644
+Valid from: Mon Oct 31 10:09:26 IST 2022 until: Fri Mar 18 10:09:26 IST 2050
+Certificate fingerprints:
+	 SHA1: 37:96:C6:74:AD:84:35:43:6A:87:F2:1E:28:02:73:D1:3A:01:A3:0B
+	 SHA256: 62:6B:D0:E3:D9:72:C5:4C:D1:C5:67:52:47:37:B8:51:A4:89:AE:B9:EE:7A:9A:D1:93:58:51:91:69:88:94:E3
+Signature algorithm name: SHA256withRSA
+Subject Public Key Algorithm: 2048-bit RSA key
+Version: 3
+
+Extensions: 
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: E0 82 4A 09 82 5C 71 18   8A FD 9A F9 E1 A6 26 6B  ..J..\q.......&k
+0010: AC 3F 29 31                                        .?)1
+]
+]
+
